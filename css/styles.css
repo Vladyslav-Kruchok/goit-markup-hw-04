@@ -11,6 +11,8 @@
     --logo-color-light-blue: #2196F3;
     --active: #188CE8;
     --add-order-color: #2196F3;
+    --icon-color: #AFB1B8;
+    --icon-color-active: #2196F3;
     --first-font: 'Roboto', sans-serif; 
     --second-font: 'Raleway', sans-serif;
 }
@@ -55,6 +57,14 @@ header{
 .section{
     padding: 94px 0;
 }
+.title{
+    font-weight: 900;
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    color: var(--second-color-different-black);
+    text-align: center;
+    margin-bottom: 50px;
+}
 .visually-hidden{
     position: absolute;
     clip: rect(0 0 0 0);
@@ -66,7 +76,7 @@ header{
 .no-mark{
     list-style: none;
 }
-.no-undeline{
+.no-underline{
     text-decoration: none;
 }
 
@@ -86,6 +96,22 @@ header{
     border-radius: 4px;
     border: hidden; 
 }
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+.with-nowrap{
+    flex-wrap: nowrap;
+}
+.with-border{
+    border: 1px solid var(--icon-color);
+    border-radius: 4px;
+}
+.with-border:hover{
+    border: 1px solid var(--icon-color-active);
+}
 .card-title{
     color: var(--second-color-different-black);
     font-size: 16px;
@@ -102,6 +128,10 @@ header{
 }
 .card-text-center{
     text-align: center;
+}
+.item{
+    margin-left: 30px;
+    margin-top: 30px;
 }
 
 /* ---------- header ---------- */
@@ -186,14 +216,7 @@ header{
     border: hidden;
 }
 /* section web-stud-main-content-peculiarity */
-.peculiarity-cards{
-    display: flex;
-    margin-left: -30px;
-    margin-top: -30px;
-}
 .peculiarity-item{
-    margin-left: 30px;
-    margin-top: 30px;
     flex-basis: calc((100% - 120px) / 4);
 }
 .peculiarity-li-title{
@@ -212,40 +235,15 @@ header{
 .section-no-top-pad{
     padding-top: 0;
 }
-/* web-stud-main-content-what-to-do */
-/* web-stud-main-content-teams */
+/* section web-stud-main-content-what-to-do */
+/* section web-stud-main-content-teams */
 .teams-section-bg{
     background-color: var(--sixth-color);
 }
-.teams-title,
-.what-to-do-title{
-    font-weight: 900;
-    font-size: 36px;
-    line-height: calc(42 / 36);
-    color: var(--second-color-different-black);
-    text-align: center;
-    margin-bottom: 50px;
-}
-.what-to-do-cards{
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -30px;
-    margin-top: -30px;
-}
 .what-to-do-item{
-    margin-left: 30px;
-    margin-top: 30px;
     flex-basis: calc((100% - 90px) / 3);
 }
-.teams-cards{
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -30px;
-    margin-top: -30px;
-}
 .teams-item{
-    margin-left: 30px;
-    margin-top: 30px;
     flex-basis: calc((100% - 120px) / 4);
 }
 .card-team-info{
@@ -253,8 +251,22 @@ header{
     padding-top: 30px;
     padding-bottom: 30px;
 }
+/* web-stud-main-content-clients */
+.clients-link{
+    color: var(--icon-color);
+    display: block;
+    padding: 16px 32px;
+}
+.clients-link:hover{
+    color: var(--icon-color-active);
+}
+.clients-icon{
+    display: block;
+    fill: currentColor;
+}
 
-/* *** main-porfolio *** */
+
+/* ---------- main-porfolio ---------- */
 .portfolio-filters-btn{
     background: var(--sixth-color);
     border-radius: 4px;
@@ -277,18 +289,7 @@ header{
 .portfolio-filters-li:not(:last-child){
     margin-right: 8px;
 }
-
-.portfolio-cards{
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -30px;
-    margin-top: -30px;
-    padding: 0;
-}
 .portfolio-item{
-    margin-left: 30px;
-    margin-top: 30px;
-    padding: 0;
     flex-basis: calc((100% - 90px) / 3);
 }
 .portfolio-item-box{
