@@ -216,8 +216,18 @@ header{
     border: hidden;
 }
 /* section web-stud-main-content-peculiarity */
+
 .peculiarity-item{
     flex-basis: calc((100% - 120px) / 4);
+}
+.peculiarity-li-box{
+    border: 1px solid var(--sixth-color);
+    background-color: var(--sixth-color);
+    margin-bottom: 30px;
+}
+.peculiarity-li-icon{
+    margin: 25px 100px;
+
 }
 .peculiarity-li-title{
     font-weight: 900;
