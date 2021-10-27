@@ -24,7 +24,6 @@ h3,
 p{
     margin: 0;
 }
-
 ul{
     margin: 0;
     padding: 0;
@@ -64,6 +63,12 @@ header{
     color: var(--second-color-different-black);
     text-align: center;
     margin-bottom: 50px;
+}
+.uppercase-title{
+    font-weight: 900;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    text-transform: uppercase;
 }
 .visually-hidden{
     position: absolute;
@@ -133,7 +138,15 @@ header{
     margin-left: 30px;
     margin-top: 30px;
 }
-
+.social{
+    display: flex;
+}
+.social-link{
+    width: 44px;
+    height: 44px;
+    display: block;
+    border-radius: 50%;
+}
 /* ---------- header ---------- */
 /* ---------- header-logo-txt ---------- */
 .header{
@@ -230,11 +243,7 @@ header{
 
 }
 .peculiarity-li-title{
-    font-weight: 900;
-    font-size: 14px;
-    line-height: calc(16 / 14);
     color: var(--second-color-different-black);
-    text-transform: uppercase;
     margin-bottom: 10px;
 }
 .peculiarity-li-text{
@@ -255,11 +264,32 @@ header{
 }
 .teams-item{
     flex-basis: calc((100% - 120px) / 4);
+    width: 270px;
 }
 .card-team-info{
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
+}
+.social-team{
+    margin: 16px 32px 30px 32px;
+}
+.item-li-social:not(:last-child){
+    margin-right: 10px;
+}
+.social-link-team{
+    background-color: var(--fifth-color);
+    color: var(--icon-color);
+}
+.social-link-team:hover{
+    background-color: var(--icon-color-active);
+    color: var(--first-color-white);
+}
+.social-icon{
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+    margin: 12px;
 }
 /* web-stud-main-content-clients */
 .clients-link{
@@ -354,4 +384,23 @@ header{
 }
 .footer-contacts-li:not(:last-child){
     margin-bottom: 9px;
+}
+.footer-box{
+    display: flex;
+}
+.footer-social{
+    margin-left: 70px;
+}
+.footer-social-title{
+    font-weight: 700;
+    margin-bottom: 23px;
+}
+.footer-social-link{
+    display: block;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--first-color-white);
+}
+.footer-social-link:hover{
+    background-color: var(--icon-color-active);
 }
