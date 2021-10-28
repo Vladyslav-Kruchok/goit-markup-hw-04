@@ -97,7 +97,7 @@ header{
 .active-btn:focus{
     background: var(--active);
     color: var(--first-color-white);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     border: hidden; 
 }
@@ -194,15 +194,45 @@ header{
     letter-spacing: 0.02em;
     color: var(--second-color-different-black);
 }
-
+/* Ask Mentor */
+/* .header-envelope:before{
+    display: inline-flex;
+    content: '';
+    fill: var(--third-color-different-grey);
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../images/symbol-defs.svg#icon-envelope);
+} */
+.header-contacts{
+display: inline-flex;
+align-items: center;
+}
+.header-icon{
+    display: block;
+    fill: currentColor;
+    margin: 10px;
+}
 /* ---------- main ---------- */
 /* ---------- main-index ---------- */
 /* section web-stud-main-content */
-.content{
-    padding-top: 200px;
-    padding-bottom: 200px;
+.content-first{
     background: var(--fourth-color);
     text-align: center;
+}
+.content-overlay{
+    max-width: 1600px;
+    min-width: 1200px;
+    padding-top: 200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right, rgba(0,0,0,0.4), rgba(47, 48, 58, 0.4)), url(../images/content-bg.jpg);
 }
 .content-title{
     font-weight: 900;
@@ -228,6 +258,7 @@ header{
     border-radius: 4px;
     border: hidden;
 }
+
 /* section web-stud-main-content-peculiarity */
 
 .peculiarity-item{
@@ -265,11 +296,12 @@ header{
 .teams-item{
     flex-basis: calc((100% - 120px) / 4);
     width: 270px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px
 }
 .card-team-info{
     text-align: center;
     padding-top: 30px;
-    padding-bottom: 30px;
 }
 .social-team{
     margin: 16px 32px 30px 32px;
@@ -286,8 +318,6 @@ header{
     color: var(--first-color-white);
 }
 .social-icon{
-    width: 20px;
-    height: 20px;
     fill: currentColor;
     margin: 12px;
 }
@@ -304,8 +334,6 @@ header{
     display: block;
     fill: currentColor;
 }
-
-
 /* ---------- main-porfolio ---------- */
 .portfolio-filters-btn{
     background: var(--sixth-color);
@@ -331,6 +359,12 @@ header{
 }
 .portfolio-item{
     flex-basis: calc((100% - 90px) / 3);
+    
+}
+.portfolio-item:hover{
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .portfolio-item-box{
     padding: 20px 24px;
